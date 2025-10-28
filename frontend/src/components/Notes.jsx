@@ -30,7 +30,6 @@ export const Notes =()=>{
   };
 
     return (
-      <>
         <div className="max-w-2xl w-full sm:p-8 p-4 mx-auto mt-10 bg-amber-100 rounded-lg shadow-lg">
           <h2 className="text-3xl font-bold mb-4 items-center flex text-center justify-center gap-4">
             📓 Take Notes
@@ -128,6 +127,5 @@ export const Notes =()=>{
             })}
           </div>
         </div>
-      </>
     );
 }
