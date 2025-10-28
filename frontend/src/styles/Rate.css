@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+.rating-container {
+    text-align: center;
+    color: white;
+    margin-top: 100px;
+}
+
+.star {
+    display: inline-block;
+}
+
+.star input {
+    display: none;
+}
+
+.star label {
+    font-size: 50px;
+    color: #555;
+    /* default grey */
+    padding: 5px;
+    cursor: pointer;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.star label.filled {
+    color: gold;
+    text-shadow: 0 0 10px gold;
+}
+
+.star label:hover {
+    transform: scale(1.2);
+}
