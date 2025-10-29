@@ -10,8 +10,8 @@ function App() {
     <>
     {/* <Rate/> */}
     {/* <Form/> */}
-    {/* <Test/> */}
-    <Notes/>
+    <Test/>
+    {/* <Notes/> */}
     </>
   )
 }

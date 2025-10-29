@@ -1,5 +1,8 @@
 import express  from"express";
 const app = express();
+import cors from "cors"; // ✅ add this
+app.use(cors());
+
 const port = process.env.PORT || 3000;
 
 app.get("/",(req,res)=>{
@@ -38,10 +41,10 @@ app.get("/jokes", (req,res)=>{
     joke: "I used to hate elevators, but now I find them uplifting."
   }
 ];
-    res.send(dadJokes);
+    res.json(dadJokes);
 
 });
 
 app.listen(port , ()=>{
     console.log("server running on port : ", port);
-});
+}); 
