@@ -64,11 +64,11 @@ userSchema.methods.generateAccessToken = function(){
         },
         process.env.ACCESS_TOKEN_SECRET,
         {
-            expiresIN: process.env.ACCESS_TOKEN_EXPIRY
+            expiresIn: process.env.ACCESS_TOKEN_EXPIRY
         }
     )
 }
-userSchema.methods.generateRefereshToken = function(){
+userSchema.methods.generateRefreshToken = function(){
     return jwt.sign(
         {
             _id: this._id,
@@ -78,7 +78,7 @@ userSchema.methods.generateRefereshToken = function(){
         },
         process.env.REFRESH_TOKEN_SECRET,
         {
-            expiresIN: process.env.REFRESH_TOKEN_EXPIRY
+            expiresIn: process.env.REFRESH_TOKEN_EXPIRY
         }
     )
 }
